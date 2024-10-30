@@ -1,10 +1,10 @@
-use std::io::Result;
 use clap::{Parser, Subcommand};
+use std::io::Result;
 //use assert_cmd::Command;
 
-mod test;
 mod somethingelse;
 mod sss;
+mod test;
 
 use crate::test::c;
 
@@ -13,8 +13,6 @@ use crate::test::c;
 pub struct Cli {
     #[command(subcommand)]
     subcmds: Commands,
-
-    
 }
 
 #[derive(Subcommand)]
